@@ -4,14 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const testimonials = [
   {
-    name: "Joel",
+    name: "john",
     avatar: "J",
     title: "Software Engineer",
-    description: "This is the best application I've ever used!",
+    description: "This is the best ai application I've ever used!",
   },
   {
-    name: "Antonio",
-    avatar: "A",
+    name: "tony",
+    avatar: "T",
     title: "Designer",
     description: "I use this daily for generating new photos!",
   },
@@ -23,8 +23,8 @@ const testimonials = [
       "This app has changed my life, cannot imagine working without it!",
   },
   {
-    name: "Mary",
-    avatar: "M",
+    name: "Harry",
+    avatar: "H",
     title: "CFO",
     description:
       "The best in class, definitely worth the premium subscription!",
@@ -36,7 +36,7 @@ const LandingContent = () => {
       <h2 className="text-center text-4xl text-white font-extrabold mb-10 ">
         Testimonials
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {testimonials.map((item) => (
           <Card
             key={item.description}
@@ -44,6 +44,9 @@ const LandingContent = () => {
           >
             <CardHeader>
               <CardTitle className="flex items-center gap-x-2">
+                <div className="px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-400 ring mr-2 rounded-full">
+                  {item.avatar}
+                </div>
                 <div>
                   <p className="text-lg">{item.name}</p>
                   <p className="text-zinc-400 text-sm">{item.title}</p>

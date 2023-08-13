@@ -16,7 +16,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
+const font = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const routes = [
   {
@@ -71,9 +71,7 @@ const Sidebar = () => {
           <div className="relative w-8 h-8 mr-4">
             <Image fill alt="Logo" src="/logo.png" />
           </div>
-          <h1 className={cn("text-2xl font-bold", montserrat.className)}>
-            AI-FI
-          </h1>
+          <h1 className={cn("text-2xl font-bold", font.className)}>AI-VERSE</h1>
         </Link>
         <div className="space-y-1">
           {routes.map((route) => (
