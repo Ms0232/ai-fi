@@ -44,7 +44,7 @@ const LandingContent = () => {
           >
             <CardHeader>
               <CardTitle className="flex items-center gap-x-2">
-                <div className="px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-400 ring mr-2 rounded-full">
+                <div className="px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-400 mr-2 rounded-full">
                   {item.avatar}
                 </div>
                 <div>
